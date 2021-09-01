@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+  font-family: $font-poppins;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
