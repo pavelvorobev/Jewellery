@@ -1,0 +1,120 @@
+.login-form {
+  position: relative;
+  width: 430px;
+  background-color: $color-blog-info;
+
+  @media (max-width: $width-tablet) {
+    width: 270px;
+  }
+}
+
+.login-form__close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form__close-button svg {
+  color: $color-black-text;
+}
+
+.login-form__info {
+  padding: 60px 45px;
+
+  @media (max-width: $width-tablet) {
+    padding: 60px 51px;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding: 45px 15px;
+  }
+}
+
+.login-form h2 {
+  margin-bottom: 45px;
+  font-family: $font-cg;
+  text-align: center;
+
+  @include fontMeasure(700, 34px, 44px);
+  color: $color-black-text;
+
+  @media (max-width: $width-desktop) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 40px;
+
+    @include fontMeasure(700, 24px, 31px);
+  }
+}
+
+.login-form input {
+  width: 100%;
+  margin-bottom: 40px;
+  padding-bottom: 9px;
+  background-color: transparent;
+  color: $color-gray;
+  border: none;
+  border-bottom: 1px solid $color-black-text;
+  font-family: $font-poppins;
+
+  @include fontMeasure(500, 14px, 21px);
+
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 35px;
+  }
+}
+
+.login-form__forgot-link {
+  display: block;
+  margin-bottom: 50px;
+  text-align: right;
+  color: $color-gray;
+
+  @include fontMeasure(500, 12px, 18px);
+}
+
+.login-form__submit-button {
+  width: 100%;
+  padding: 28px;
+  border: none;
+  font-family: $font-poppins;
+  background-color: $color-brown-menu;
+  color: $color-white;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  @include fontMeasure(500, 16px, 21px);
+}
+
+.login-form span {
+  display: inline-block;
+  margin-left: 53px;
+  margin-right: 5px;
+  vertical-align: baseline;
+  color: $color-gray;
+
+  @include fontMeasure(500, 14px, 21px);
+
+  @media (max-width: $width-tablet) {
+    margin-left: 5px;
+  }
+}
+
+.login-form__sign-link {
+  display: inline-block;
+  vertical-align: baseline;
+  color: $color-black-text;
+
+  @include fontMeasure(500, 14px, 21px);
+}

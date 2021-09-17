@@ -4,6 +4,30 @@
 @import "./base/reset.scss";
 @import "./base/fonts.scss";
 @import "./base/global.scss";
+@import "./base/container.scss";
 @import "./base/visually-hidden.scss";
 
+/* Plugins */
+@import "./blocks/swiper-vars.scss";
+@import "./blocks/swiper-pagination.scss";
+@import "./blocks/swiper.scss";
+
 /* Blocks */
+@import "./blocks/body.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/header.scss";
+@import "./blocks/user-nav.scss";
+@import "./blocks/novelty.scss";
+@import "./blocks/blog.scss";
+@import "./blocks/questions.scss";
+@import "./blocks/instagram.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-body.scss";
+@import "./blocks/filters.scss";
+@import "./blocks/range.scss";
+@import "./blocks/goods.scss";
+@import "./blocks/visible.scss";
+@import "./blocks/hidden.scss";
+@import "./blocks/modals.scss";
+@import "./blocks/login-form.scss";

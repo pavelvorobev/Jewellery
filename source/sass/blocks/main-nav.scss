@@ -1,0 +1,35 @@
+.main-nav .container {
+  display: flex;
+  justify-content: center;
+  padding: 0 98px;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.main-nav li {
+  margin-right: 34px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.main-nav a {
+  display: block;
+  padding: 18px 0;
+  color: $color-black-text;
+
+  @include fontMeasure(500, 16px, 24px);
+
+  &:hover {
+    color: rgba($color-black-text, 0.7);
+  }
+
+  &:active {
+    color: rgba($color-black-text, 0.8);
+  }
+}

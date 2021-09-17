@@ -1,0 +1,59 @@
+.range {
+  position: relative;
+  padding-left: 25px;
+}
+
+.range__scale {
+  width: 100%;
+  height: 1px;
+  background-color: $color-blog-info;
+}
+
+.range__bar {
+  width: 90px;
+  height: 1px;
+  margin-left: 60px;
+  background-color: $color-brown-menu;
+}
+
+.range__toggle {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+}
+
+.range__toggle button {
+  position: absolute;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: $color-brown-menu;
+}
+
+.range__toggle span {
+  @include fontMeasure(500, 14px, 18px);
+}
+
+.range__toggle--min span {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-top: 20px;
+}
+
+.range__toggle--max span {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-top: 20px;
+}
+
+.range__toggle--min {
+  top: -7px;
+  left: 60px;
+}
+
+.range__toggle--max {
+  top: -7px;
+  right: 33px;
+}

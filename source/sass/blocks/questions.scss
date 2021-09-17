@@ -1,0 +1,132 @@
+.questions {
+  padding: 0 100px 108px 100px;
+
+  @media (max-width: $width-desktop) {
+    padding: 0 0 84px 0;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding: 0 0 70px 0;
+  }
+}
+
+.questions h2 {
+  margin-bottom: 60px;
+  font-family: $font-cg;
+  text-align: center;
+
+  @include fontMeasure(700, 34px, 44px);
+  color: $color-black-text;
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 40px;
+  }
+}
+
+.questions__list--nojs .questions__toggle-button {
+  display: none;
+}
+
+.questions li {
+  position: relative;
+  padding: 50px 65px 50px 50px;
+  border: 1px solid $color-brown-menu;
+  margin-top: -1px;
+
+  @media (max-width: $width-tablet) {
+    padding: 50px 73px 50px 50px;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding: 25px 45px 25px 25px;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.questions h3 {
+  margin-bottom: 20px;
+
+  @include fontMeasure(500, 18px, 23px);
+  color: $color-black-text;
+
+  @media (max-width: $width-desktop) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 25px;
+    margin-right: 17px;
+
+    @include fontMeasure(500, 16px, 22px);
+  }
+}
+
+.questions p {
+  @include fontMeasure(400, 16px, 21px);
+  color: $color-black-text;
+
+  @media (max-width: $width-tablet) {
+    @include fontMeasure(500, 14px, 20px);
+  }
+}
+
+.questions button {
+  position: absolute;
+  top: 52px;
+  right: 50px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (max-width: $width-tablet) {
+    top: 25px;
+    right: 25px;
+  }
+}
+
+.questions__item svg {
+  color: $color-brown-menu;
+
+  &:hover {
+    color: rgba($color-brown-menu, 0.7);
+  }
+
+  &:active {
+    color: rgba($color-brown-menu, 0.8);
+  }
+}
+
+.questions__item.closed h3 {
+  margin-bottom: 0;
+}
+
+.questions__item.opened .questions__icon {
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+}
+
+.questions__item.closed .questions__icon {
+  &--closed {
+    display: block;
+  }
+
+  &--opened {
+    display: none;
+  }
+}
+
+.questions__item.closed p {
+  display: none;
+}
+
+.questions__item.opened p {
+  display: block;
+}
