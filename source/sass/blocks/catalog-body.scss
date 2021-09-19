@@ -15,6 +15,7 @@
   }
 
   @media (max-width: $width-tablet) {
+    padding: 0 35px;
     background: #564034b2 url("../img/catalog-header-banner-mobile.jpg") center / cover no-repeat;
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -24,11 +25,23 @@
 }
 
 .catalog-body .header__banner p {
+  letter-spacing: normal;
+
   @include fontMeasure(700, 34px, 44px);
+
+  @media (max-width: $width-desktop) {
+    margin-right: 0;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-right: 0;
+  }
 }
 
 .catalog-body .header__banner span {
-  margin-top: 20px;
-
   @include fontMeasure(500, 22px, 29px);
+
+  @media (max-width: $width-tablet) {
+    margin-top: 5px;
+  }
 }

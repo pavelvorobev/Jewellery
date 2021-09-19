@@ -99,6 +99,7 @@
         768: {
           slidesPerView: 2,
           slidesPerGroup: 2,
+          spaceBetween: 30,
           pagination: {
             type: 'bullets',
             renderBullet: function (index, className) {

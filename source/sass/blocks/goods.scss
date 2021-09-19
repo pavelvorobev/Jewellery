@@ -1,23 +1,23 @@
 .goods {
-  padding: 80px 98px 80px 398px;
+  padding: 80px 98px 35px 398px;
 
   @media (max-width: $width-desktop) {
-    padding: 50px 45px 80px 45px;
+    padding: 50px 45px 35px 45px;
   }
 
   @media (max-width: $width-tablet) {
-    padding: 40px 15px 70px 15px;
+    padding: 40px 15px 35px 15px;
   }
 }
 
 .goods ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px 30px;
+  gap: 35px 30px;
 
   @media (max-width: $width-tablet) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 24px 30px;
   }
 }
 
@@ -37,15 +37,15 @@
 
 .goods img {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 
   @media (max-width: $width-tablet) {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
 }
 
 .goods h3 {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 
   @include fontMeasure(500, 16px, 21px);
 }
@@ -70,5 +70,96 @@
       background-color: $color-brown-menu;
       color: $color-white;
     }
+
+    @media (max-width: $width-tablet) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.goods__pagination {
+  border-top: 1px solid #f6f5f4;
+
+  @media (max-width: $width-tablet) {
+    border-top: none;
+  }
+}
+
+.goods__pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 35px 98px 75px 398px;
+
+  @media (max-width: $width-desktop) {
+    padding: 35px 45px 76px 45px;
+  }
+
+  @media (max-width: $width-tablet) {
+    justify-content: center;
+    padding: 8px 15px 67px 15px;
+  }
+}
+
+.goods__pagination ul {
+  display: flex;
+  margin-left: -32px;
+
+  @media (max-width: $width-tablet) {
+    margin-left: 0;
+  }
+}
+
+.goods__pagination li {
+  margin-right: 13px;
+
+  @include fontMeasure(500, 16px, 21px);
+
+  @media (max-width: $width-tablet) {
+    margin-right: 23px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.goods__pagination a {
+  color: $color-gray;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.goods__pagination li.active a {
+  color: $color-black-text;
+}
+
+.goods__pagination button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: $color-black-text;
+  cursor: pointer;
+  font-family: $font-poppins;
+
+  @include fontMeasure(500, 16px, 21px);
+
+  @media (max-width: $width-tablet) {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 }

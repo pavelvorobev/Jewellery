@@ -13,15 +13,15 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 30px 98px 19px 98px;
+  padding: 43px 98px 15px 98px;
 
   @media (max-width: $width-desktop) {
-    padding: 30px 45px;
+    padding: 36px 45px 28px 45px;
     align-items: center;
   }
 
   @media (max-width: $width-tablet) {
-    padding: 20px 15px;
+    padding: 24px 15px 17px 15px;
   }
 }
 
@@ -33,6 +33,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    padding: 0;
   }
 }
 
@@ -74,7 +75,12 @@
 .header__main-nav--active .header__search--mobile {
   @media (max-width: $width-desktop) {
     display: block;
-    margin-bottom: 35px;
+    margin-top: 11px;
+    margin-bottom: 37px;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 27px;
   }
 }
 
@@ -82,16 +88,17 @@
   @media (max-width: $width-desktop) {
     display: flex;
     flex-direction: column;
-    padding: 0 45px 80px 45px;
+    padding: 0 45px 60px 45px;
   }
 
   @media (max-width: $width-tablet) {
-    padding: 0 15px 50px 15px;
+    padding: 0 15px 30px 15px;
   }
 }
 
 .header__main-nav--active ul {
   @media (max-width: $width-desktop) {
+    margin-left: -2px;
     flex-direction: column;
     color: $color-white;
   }
@@ -105,13 +112,17 @@
 
 .header__list {
   @media (max-width: $width-desktop) {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 15px;
   }
 }
 
 .header__list a {
   @media (max-width: $width-desktop) {
-    padding: 20px 0;
+    padding: 10px 0;
     color: $color-white;
 
     @include fontMeasure(500, 24px, 36px);
@@ -128,13 +139,17 @@
 
 .header__sublist {
   @media (max-width: $width-desktop) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 11px;
   }
 }
 
 .header__sublist a {
   @media (max-width: $width-desktop) {
-    padding: 15px 0;
+    padding: 10px 0;
     color: rgba($color-white, 0.75);
 
     @include fontMeasure(500, 18px, 23px);
@@ -190,6 +205,7 @@
 
 .header__search input {
   border: none;
+  font-family: $font-poppins;
 
   &::placeholder {
     color: $color-gray;
@@ -198,9 +214,13 @@
   }
 }
 
+.header__search--desktop svg {
+  margin-right: 10px;
+}
+
 .header__search--mobile input {
   width: 100%;
-  padding: 6px 30px;
+  padding: 10px 30px;
   background-color: rgba($color-white, 0.15);
   border-radius: 21px;
 }
@@ -213,8 +233,28 @@
   color: $color-white;
 }
 
+.header__main-logo {
+  margin-top: -13px;
+  margin-left: -40px;
+
+  @media (max-width: $width-desktop) {
+    margin-top: -7px;
+    margin-left: 28px;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-top: -4px;
+    margin-left: 28px;
+  }
+}
+
 .header__main-logo svg {
   color: $color-brown-menu;
+
+  @media (max-width: $width-tablet) {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .header__top--active svg {
@@ -259,15 +299,34 @@
   text-align: center;
   font-family: $font-cg;
   color: $color-white;
+  letter-spacing: 0.03em;
 
   @include fontMeasure(700, 45px, 58px);
+
+  @media (max-width: $width-desktop) {
+    margin-top: -2px;
+    margin-right: 16px;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin: -5px 0 0 0;
+
+    @include fontMeasure(700, 38px, 49px);
+  }
 }
 
 .header__banner span {
   display: block;
   font-style: italic;
+  letter-spacing: 0;
 
   @include fontMeasure(400, 38px, 49px);
+
+  @media (max-width: $width-tablet) {
+    margin-top: -8px;
+
+    @include fontMeasure(700, 34px, 44px);
+  }
 }
 
 .header__top--nojs .header__toggle-button {

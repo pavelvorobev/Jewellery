@@ -1,7 +1,7 @@
 .filters {
   position: absolute;
   top: 80px;
-  left: 98px;
+  left: 160px;
   width: 250px;
   background-color: $color-white;
 
@@ -76,6 +76,28 @@
   color: $color-white;
 }
 
+.filters.visible .range__bar {
+  width: 158px;
+
+  @media (max-width: $width-tablet) {
+    width: 120px;
+  }
+}
+
+.filters.visible .range__toggle--max {
+  right: 160px;
+
+  @media (max-width: $width-tablet) {
+    right: 50px;
+  }
+}
+
+.filters.visible .range__toggle--min {
+  @media (max-width: $width-tablet) {
+    left: 60px;
+  }
+}
+
 .filters__fieldset {
   position: relative;
   display: block;
@@ -83,7 +105,7 @@
   margin-top: -1px;
 
   &--price {
-    padding-bottom: 50px;
+    padding-bottom: 21px;
   }
 
   &:last-of-type {
@@ -104,13 +126,13 @@
 }
 
 .filters__fieldset h3 {
-  padding: 28px 25px;
+  padding: 28px 24px 21px 24px;
 }
 
 .filters__fieldset button {
   position: absolute;
-  top: 30px;
-  right: 25px;
+  top: 28px;
+  right: 20px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -169,7 +191,7 @@
 .filters__settings {
   display: flex;
   flex-direction: column;
-  padding: 0 25px 29px 35px;
+  padding: 0 25px 29px 30px;
 }
 
 .filters__settings label {

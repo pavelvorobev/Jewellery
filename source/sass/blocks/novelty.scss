@@ -1,22 +1,26 @@
 .novelty {
   text-align: center;
-  padding: 130px 0;
+  padding: 120px 0 106px 0;
 
   @media (max-width: $width-desktop) {
-    padding: 80px 0;
+    padding: 70px 0 58px 0;
   }
 
   @media (max-width: $width-tablet) {
-    padding: 70px 0;
+    padding: 60px 0 47px 0;
   }
 }
 
 .novelty h2 {
-  margin-bottom: 35px;
+  margin-bottom: 23px;
   font-family: $font-cg;
 
   @include fontMeasure(700, 34px, 44px);
   color: $color-black-text;
+
+  @media (max-width: $width-desktop) {
+    margin-bottom: 18px;
+  }
 }
 
 .novelty__shop-link {
@@ -29,6 +33,14 @@
   @include fontMeasure(500, 16px, 21px);
   color: $color-black-text;
 
+  @media (max-width: $width-desktop) {
+    margin-bottom: 55px;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 45px;
+  }
+
   &:hover {
     color: rgba($color-black-text, 0.7);
   }
@@ -40,7 +52,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -7px;
     left: 0;
     width: 80px;
     height: 1px;
@@ -49,14 +61,16 @@
 }
 
 .novelty ul {
-  margin-bottom: 60px;
+  justify-content: space-between;
+  margin-bottom: 81px;
 
   @media (max-width: $width-desktop) {
-    margin-bottom: 50px;
+    justify-content: flex-start;
+    margin-bottom: 70px;
   }
 
   @media (max-width: $width-tablet) {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 }
 
@@ -72,11 +86,15 @@
 }
 
 .novelty img {
-  width: 20vw;
-  height: 20vw;
+  width: 19.766vw;
   max-width: 270px;
   max-height: 284px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  align-self: left;
+
+  @media (max-width: 1365px) {
+    width: 15vw;
+  }
 
   @media (max-width: $width-desktop) {
     max-width: 100%;
@@ -88,11 +106,12 @@
   @media (max-width: $width-tablet) {
     width: 130px;
     height: 136px;
+    margin-bottom: 15px;
   }
 }
 
 .novelty h3 {
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 
   @include fontMeasure(500, 16px, 21px);
   color: $color-black-text;
@@ -140,12 +159,16 @@
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: -95px;
+  top: -105px;
   width: 30px;
   height: 11px;
   padding: 0;
   border: none;
   background-color: transparent;
+
+  @media (max-width: $width-desktop) {
+    top: -95px;
+  }
 
   @media (max-width: $width-tablet) {
     display: none;

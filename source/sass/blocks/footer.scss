@@ -1,14 +1,14 @@
 .footer {
   margin-top: auto;
-  padding: 100px 0;
+  padding: 90px 0;
   background-color: $color-black;
 
   @media (max-width: $width-desktop) {
-    padding: 60px 105px 60px 0;
+    padding: 50px 105px 55px 0;
   }
 
   @media (max-width: $width-tablet) {
-    padding: 60px 0;
+    padding: 50px 0 35px 0;
   }
 }
 
@@ -16,14 +16,14 @@
   display: grid;
   align-items: start;
   grid-template-columns: repeat(3, max-content);
-  column-gap: 5.9vw;
+  column-gap: 80px;
 
   @media (max-width: 1366px) {
-    column-gap: 30px;
+    column-gap: 5.857vw;
   }
 
   @media (max-width: $width-desktop) {
-    gap: 50px 87px;
+    gap: 46px 65px;
   }
 
   @media (max-width: $width-tablet) {
@@ -33,8 +33,12 @@
 }
 
 .footer a {
-  @include fontMeasure(500, 1.1vw, 21px);
+  @include fontMeasure(500, 16px, 21px);
   color: $color-white;
+
+  @media (max-width: 1365px) {
+    @include fontMeasure(500, 1.171vw, 21px);
+  }
 
   @media (max-width: $width-desktop) {
     @include fontMeasure(500, 16px, 21px);
@@ -58,36 +62,37 @@
 }
 
 .footer__form p {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-family: $font-cg;
+  letter-spacing: 0.03em;
 
   @include fontMeasure(700, 34px, 44px);
 
   @media (max-width: $width-tablet) {
     max-width: 66.56vw;
-    margin-bottom: 30px;
+    margin-bottom: 14px;
   }
 }
 
 .footer__form span {
   display: block;
-  margin-bottom: 49px;
+  margin-bottom: 30px;
 
   @include fontMeasure(400, 16px, 21px);
   color: $color-gray;
 
   @media (max-width: $width-desktop) {
-    margin-bottom: 54px;
+    margin-bottom: 30px;
   }
 
   @media (max-width: $width-tablet) {
     max-width: 70.63vw;
-    margin-bottom: 52px;
+    margin-bottom: 28px;
   }
 }
 
 .footer__form input {
-  width: 388px;
+  width: 385px;
   padding: 9px 0;
   border: none;
   border-bottom: 1px solid $color-white;
@@ -97,8 +102,8 @@
 
   @include fontMeasure(500, 14px, 21px);
 
-  @media (max-width: 1388px) {
-    width: 268px;
+  @media (max-width: 1365px) {
+    width: 28.184vw;
   }
 
   @media (max-width: $width-desktop) {
@@ -106,12 +111,12 @@
   }
 
   @media (max-width: $width-tablet) {
-    width: 44.31vw;
+    width: 54.6vw;
   }
 }
 
 .footer__form button {
-  width: 120px;
+  width: 115px;
   margin-left: -4px;
   padding: 12px 0 10px 12px;
   text-align: left;
@@ -120,6 +125,7 @@
   background-color: transparent;
   color: $color-white;
   font-family: $font-poppins;
+  cursor: pointer;
 
   @include fontMeasure(500, 16px, 21px);
 
@@ -133,47 +139,65 @@
 }
 
 .footer__form button svg {
-  margin-left: 12px;
+  margin-left: 7px;
 }
 
 .footer__links {
   display: grid;
+  margin: 8px 6px 0 11px;
   grid-template-rows: repeat(4, max-content);
-  grid-template-columns: 12.96vw 9.96vw;
+  grid-template-columns: 177px 136px;
   grid-auto-flow: row;
-  gap: 30px 4.5vw;
+  gap: 21px 65px;
 
-  @media (max-width: 1366px) {
-    column-gap: 15px;
+  @media (max-width: 1365px) {
+    gap: 1.537vw 1.25vw;
+    grid-template-columns: 12.96vw 9.96vw;
   }
 
   @media (max-width: $width-desktop) {
+    margin: 0;
     grid-template-columns: 177px 136px;
-    gap: 30px 87px;
+    gap: 21px 80px;
   }
 
   @media (max-width: $width-tablet) {
-    grid-template-columns: none;
-    gap: 30px 87px;
+    grid-template-columns: 100%;
+    gap: 20px 87px;
   }
 }
 
 .footer__links li {
   @media (max-width: $width-tablet) {
     &:nth-child(4) {
-      margin-bottom: 50px;
+      margin-bottom: 27px;
     }
   }
 }
 
 .footer__social-list {
+  margin-top: 8px;
+
+  @media (max-width: $width-desktop) {
+    margin-top: 0;
+  }
+
   @media (max-width: $width-tablet) {
     display: flex;
+    margin-left: -5px;
   }
 }
 
 .footer__social-list li {
-  margin-bottom: 28px;
+  margin-bottom: 21px;
+
+  @media (max-width: 1365px) {
+    margin-bottom: 1.537vw;
+  }
+
+  @media (max-width: $width-desktop) {
+    margin-bottom: 21px;
+  }
 
   @media (max-width: $width-tablet) {
     margin-right: 30px;
@@ -189,7 +213,7 @@
 }
 
 .footer__social-list svg {
-  margin-right: 15px;
+  margin-right: 10px;
   color: $color-white;
 
   @media (max-width: $width-tablet) {
