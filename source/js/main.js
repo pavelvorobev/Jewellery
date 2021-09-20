@@ -143,7 +143,7 @@
     });
   }
 
-  if (!window.location.toString().includes('index.html')) {
+  if (window.location.toString().includes('catalog.html')) {
     const filterToggles = document.querySelectorAll('.filters__fieldset');
     const filters = document.querySelector('.filters');
     const filtersForm = document.querySelector('.filters__form');
