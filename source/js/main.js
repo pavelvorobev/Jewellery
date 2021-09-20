@@ -39,7 +39,8 @@
     localStorage.setItem('email', modalEmailInput.value);
   });
 
-  loginButton.addEventListener('click', () => {
+  loginButton.addEventListener('click', (event) => {
+    event.preventDefault();
     document.body.style.overflow = 'hidden';
     modals.classList.remove('hidden');
     modals.classList.add('visible');
