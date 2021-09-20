@@ -1812,55 +1812,55 @@ img {
       .goods__filters-button--open {
         margin-bottom: 40px; } }
 
-.goods__pagination {
+.goods-pagination {
   border-top: 1px solid #f6f5f4; }
   @media (max-width: 767.2px) {
-    .goods__pagination {
+    .goods-pagination {
       border-top: none; } }
 
-.goods__pagination-wrapper {
+.goods-pagination-wrapper {
   display: flex;
   justify-content: space-between;
   max-width: 1366px;
   margin: 0 auto;
   padding: 35px 98px 75px 398px; }
   @media (max-width: 1023.2px) {
-    .goods__pagination-wrapper {
+    .goods-pagination-wrapper {
       padding: 35px 45px 76px 45px; } }
   @media (max-width: 767.2px) {
-    .goods__pagination-wrapper {
+    .goods-pagination-wrapper {
       justify-content: center;
       padding: 8px 15px 67px 15px; } }
 
-.goods__pagination ul {
+.goods-pagination ul {
   display: flex;
   margin-left: -32px; }
   @media (max-width: 767.2px) {
-    .goods__pagination ul {
+    .goods-pagination ul {
       margin-left: 0; } }
 
-.goods__pagination li {
+.goods-pagination li {
   margin-right: 13px;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px; }
   @media (max-width: 767.2px) {
-    .goods__pagination li {
+    .goods-pagination li {
       margin-right: 23px; } }
-  .goods__pagination li:last-child {
+  .goods-pagination li:last-child {
     margin-right: 0; }
 
-.goods__pagination a {
+.goods-pagination a {
   color: #9b9997; }
-  .goods__pagination a:hover {
+  .goods-pagination a:hover {
     opacity: 0.7; }
-  .goods__pagination a:active {
+  .goods-pagination a:active {
     opacity: 0.8; }
 
-.goods__pagination li.active a {
+.goods-pagination li.active a {
   color: #1d1613; }
 
-.goods__pagination button {
+.goods-pagination button {
   padding: 0;
   background-color: transparent;
   border: none;
@@ -1871,11 +1871,11 @@ img {
   font-size: 16px;
   line-height: 21px; }
   @media (max-width: 767.2px) {
-    .goods__pagination button {
+    .goods-pagination button {
       display: none; } }
-  .goods__pagination button:hover {
+  .goods-pagination button:hover {
     opacity: 0.7; }
-  .goods__pagination button:active {
+  .goods-pagination button:active {
     opacity: 0.8; }
 
 .visible {

@@ -1,0 +1,86 @@
+.goods-pagination {
+  border-top: 1px solid #f6f5f4;
+
+  @media (max-width: $width-tablet) {
+    border-top: none;
+  }
+}
+
+.goods-pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 35px 98px 75px 398px;
+
+  @media (max-width: $width-desktop) {
+    padding: 35px 45px 76px 45px;
+  }
+
+  @media (max-width: $width-tablet) {
+    justify-content: center;
+    padding: 8px 15px 67px 15px;
+  }
+}
+
+.goods-pagination ul {
+  display: flex;
+  margin-left: -32px;
+
+  @media (max-width: $width-tablet) {
+    margin-left: 0;
+  }
+}
+
+.goods-pagination li {
+  margin-right: 13px;
+
+  @include fontMeasure(500, 16px, 21px);
+
+  @media (max-width: $width-tablet) {
+    margin-right: 23px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.goods-pagination a {
+  color: $color-gray;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.goods-pagination li.active a {
+  color: $color-black-text;
+}
+
+.goods-pagination button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: $color-black-text;
+  cursor: pointer;
+  font-family: $font-poppins;
+
+  @include fontMeasure(500, 16px, 21px);
+
+  @media (max-width: $width-tablet) {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
