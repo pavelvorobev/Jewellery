@@ -1,7 +1,7 @@
 {
-  "name": "c",
+  "name": "jewellery",
   "private": true,
-  "description": "",
+  "description": "Стартовый шаблон сборки Лиги А",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.0.2",

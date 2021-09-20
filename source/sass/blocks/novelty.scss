@@ -139,25 +139,6 @@
 }
 
 .novelty__button {
-  &:hover svg {
-    color: rgba($color-brown-menu, 0.7);
-  }
-
-  &:active svg {
-    color: rgba($color-brown-menu, 0.8);
-  }
-}
-
-.swiper {
-  overflow: hidden;
-}
-
-.swiper-inner {
-  position: relative;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
   position: absolute;
   top: -105px;
   width: 30px;
@@ -174,22 +155,30 @@
     display: none;
   }
 
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+    transform: rotate(180deg);
+  }
+
   &::after {
     display: none;
   }
+
+  &:hover svg {
+    color: rgba($color-brown-menu, 0.7);
+  }
+
+  &:active svg {
+    color: rgba($color-brown-menu, 0.8);
+  }
 }
 
-.swiper-button-prev {
-  left: 0;
-}
-
-.swiper-button-next {
-  right: 0;
-  transform: rotate(180deg);
-}
-
-.swiper-pagination-bullet {
-  background: none;
+.novelty__swiper-inner {
+  position: relative;
 }
 
 .novelty__button svg {

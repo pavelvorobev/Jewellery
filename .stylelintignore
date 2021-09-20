@@ -1,4 +1,4 @@
 source/sass/base/reset.scss
-source/sass/blocks/swiper-pagination.scss
-source/sass/blocks/swiper-vars.scss
-source/sass/blocks/swiper.scss
+source/sass/libs/swiper-pagination.scss
+source/sass/libs/swiper-vars.scss
+source/sass/libs/swiper.scss

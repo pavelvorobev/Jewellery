@@ -1,15 +1,3 @@
-.goods {
-  padding: 80px 98px 35px 398px;
-
-  @media (max-width: $width-desktop) {
-    padding: 50px 45px 35px 45px;
-  }
-
-  @media (max-width: $width-tablet) {
-    padding: 40px 15px 35px 15px;
-  }
-}
-
 .goods ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

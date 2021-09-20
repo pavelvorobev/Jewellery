@@ -1,4 +1,4 @@
-.catalog .header__banner {
+.catalog__header-banner {
   min-height: 261px;
   background: #564034b2 url("../img/catalog-header-banner-desktop.jpg") center / cover no-repeat;
 
@@ -24,7 +24,7 @@
   }
 }
 
-.catalog .header__banner p {
+.catalog__header-banner p {
   letter-spacing: normal;
 
   @include fontMeasure(700, 34px, 44px);
@@ -38,7 +38,7 @@
   }
 }
 
-.catalog .header__banner span {
+.catalog__header-banner span {
   @include fontMeasure(500, 22px, 29px);
 
   @media (max-width: $width-tablet) {
@@ -51,6 +51,18 @@
 }
 
 .catalog__main-wrapper {
+  display: flex;
   max-width: 1366px;
   margin: 0 auto;
+
+  padding: 80px 98px 35px 98px;
+
+  @media (max-width: $width-desktop) {
+    display: block;
+    padding: 50px 45px 35px 45px;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding: 40px 15px 35px 15px;
+  }
 }

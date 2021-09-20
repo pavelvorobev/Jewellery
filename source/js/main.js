@@ -2,7 +2,7 @@
   const menuToggleButton = document.querySelector('.header__toggle-button');
   const headerTop = document.querySelector('.header__top');
   const mainNavMenu = document.querySelector('.header__main-nav');
-  const loginButton = document.querySelector('.user-nav__item-login--desktop');
+  const loginButton = document.querySelectorAll('.user-nav__item-login');
   const modals = document.querySelector('.modals');
   const modalEmailInput = document.querySelector('#email');
   const loginForm = document.querySelector('.login-form');
@@ -39,27 +39,29 @@
     localStorage.setItem('email', modalEmailInput.value);
   });
 
-  loginButton.addEventListener('click', (event) => {
-    event.preventDefault();
-    document.body.style.overflow = 'hidden';
-    modals.classList.remove('hidden');
-    modals.classList.add('visible');
-    modalEmailInput.focus();
-
-    modals.addEventListener('transitionend', () => {
+  loginButton.forEach(((button) => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault();
+      document.body.style.overflow = 'hidden';
+      modals.classList.remove('hidden');
+      modals.classList.add('visible');
       modalEmailInput.focus();
-    });
 
-    modals.addEventListener('click', (e) => {
-      if (e.target.closest('.modals__login-form') === null) {
-        document.body.style.overflow = 'visible';
-        modals.classList.remove('visible');
-        modals.classList.add('hidden');
-      }
-    });
+      modals.addEventListener('transitionend', () => {
+        modalEmailInput.focus();
+      });
 
-    document.addEventListener('keydown', onEscClose);
-  });
+      modals.addEventListener('click', (e) => {
+        if (e.target.closest('.modals__login-form') === null) {
+          document.body.style.overflow = 'visible';
+          modals.classList.remove('visible');
+          modals.classList.add('hidden');
+        }
+      });
+
+      document.addEventListener('keydown', onEscClose);
+    });
+  }));
 
   loginFormClose.addEventListener('click', () => {
     document.body.style.overflow = 'visible';
@@ -73,6 +75,7 @@
 
     questionsList.classList.remove('questions__list--nojs');
 
+    // eslint-disable-next-line
     let swiper = new Swiper('.novelty__slider', {
       simulateTouch: false,
       navigation: {

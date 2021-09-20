@@ -7,10 +7,9 @@
 @import "./base/container.scss";
 @import "./base/visually-hidden.scss";
 
-/* Plugins */
-@import "./blocks/swiper-vars.scss";
-@import "./blocks/swiper-pagination.scss";
-@import "./blocks/swiper.scss";
+/* Libs */
+@import "./libs/swiper-pagination.scss";
+@import "./libs/swiper.scss";
 
 /* Blocks */
 @import "./blocks/body.scss";
