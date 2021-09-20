@@ -1,4 +1,4 @@
-.catalog-body .header__banner {
+.catalog-page .header__banner {
   min-height: 261px;
   background: #564034b2 url("../img/catalog-header-banner-desktop.jpg") center / cover no-repeat;
 
@@ -24,7 +24,7 @@
   }
 }
 
-.catalog-body .header__banner p {
+.catalog-page .header__banner p {
   letter-spacing: normal;
 
   @include fontMeasure(700, 34px, 44px);
@@ -38,7 +38,7 @@
   }
 }
 
-.catalog-body .header__banner span {
+.catalog-page .header__banner span {
   @include fontMeasure(500, 22px, 29px);
 
   @media (max-width: $width-tablet) {

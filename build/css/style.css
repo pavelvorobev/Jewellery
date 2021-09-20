@@ -1462,52 +1462,52 @@ img {
   .footer__social-list span {
     display: none; } }
 
+.catalog .header__banner {
+  min-height: 261px;
+  background: #564034b2 url("../img/catalog-header-banner-desktop.jpg") center/cover no-repeat; }
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .catalog .header__banner {
+      background: #564034b2 url("../img/catalog-header-banner-desktop@2x.jpg") center/cover no-repeat; } }
+  @media (max-width: 1023.2px) {
+    .catalog .header__banner {
+      background: #564034b2 url("../img/catalog-header-banner-tablet.jpg") center/cover no-repeat; } }
+  @media (max-width: 1023.2px) and (min-resolution: 192dpi), (max-width: 1023.2px) and (min-resolution: 2dppx) {
+    .catalog .header__banner {
+      background: #564034b2 url("../img/catalog-header-banner-tablet@2x.jpg") center/cover no-repeat; } }
+  @media (max-width: 767.2px) {
+    .catalog .header__banner {
+      padding: 0 35px;
+      background: #564034b2 url("../img/catalog-header-banner-mobile.jpg") center/cover no-repeat; } }
+  @media (max-width: 767.2px) and (min-resolution: 192dpi), (max-width: 767.2px) and (min-resolution: 2dppx) {
+    .catalog .header__banner {
+      background: #564034b2 url("../img/catalog-header-banner-mobile@2x.jpg") center/cover no-repeat; } }
+
+.catalog .header__banner p {
+  letter-spacing: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px; }
+  @media (max-width: 1023.2px) {
+    .catalog .header__banner p {
+      margin-right: 0; } }
+  @media (max-width: 767.2px) {
+    .catalog .header__banner p {
+      margin-right: 0; } }
+
+.catalog .header__banner span {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px; }
+  @media (max-width: 767.2px) {
+    .catalog .header__banner span {
+      margin-top: 5px; } }
+
 .catalog__main {
   position: relative; }
 
 .catalog__main-wrapper {
   max-width: 1366px;
   margin: 0 auto; }
-
-.catalog-body .header__banner {
-  min-height: 261px;
-  background: #564034b2 url("../img/catalog-header-banner-desktop.jpg") center/cover no-repeat; }
-  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .catalog-body .header__banner {
-      background: #564034b2 url("../img/catalog-header-banner-desktop@2x.jpg") center/cover no-repeat; } }
-  @media (max-width: 1023.2px) {
-    .catalog-body .header__banner {
-      background: #564034b2 url("../img/catalog-header-banner-tablet.jpg") center/cover no-repeat; } }
-  @media (max-width: 1023.2px) and (min-resolution: 192dpi), (max-width: 1023.2px) and (min-resolution: 2dppx) {
-    .catalog-body .header__banner {
-      background: #564034b2 url("../img/catalog-header-banner-tablet@2x.jpg") center/cover no-repeat; } }
-  @media (max-width: 767.2px) {
-    .catalog-body .header__banner {
-      padding: 0 35px;
-      background: #564034b2 url("../img/catalog-header-banner-mobile.jpg") center/cover no-repeat; } }
-  @media (max-width: 767.2px) and (min-resolution: 192dpi), (max-width: 767.2px) and (min-resolution: 2dppx) {
-    .catalog-body .header__banner {
-      background: #564034b2 url("../img/catalog-header-banner-mobile@2x.jpg") center/cover no-repeat; } }
-
-.catalog-body .header__banner p {
-  letter-spacing: normal;
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 44px; }
-  @media (max-width: 1023.2px) {
-    .catalog-body .header__banner p {
-      margin-right: 0; } }
-  @media (max-width: 767.2px) {
-    .catalog-body .header__banner p {
-      margin-right: 0; } }
-
-.catalog-body .header__banner span {
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 29px; }
-  @media (max-width: 767.2px) {
-    .catalog-body .header__banner span {
-      margin-top: 5px; } }
 
 .filters {
   position: absolute;
