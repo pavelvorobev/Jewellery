@@ -99,6 +99,7 @@
   background-color: transparent;
   color: $color-white;
   font-family: $font-poppins;
+  cursor: pointer;
 
   @include fontMeasure(500, 14px, 21px);
 
