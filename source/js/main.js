@@ -7,6 +7,7 @@
   const modalEmailInput = document.querySelector('#email');
   const loginForm = document.querySelector('.login-form');
   const loginFormClose = document.querySelector('.login-form__close-button');
+  const body = document.querySelector('.body');
 
   headerTop.classList.remove('header__top--active');
   headerTop.classList.remove('header__top--nojs');
@@ -14,14 +15,24 @@
   mainNavMenu.classList.remove('header__main-nav--nojs');
 
   menuToggleButton.addEventListener('click', () => {
-    headerTop.classList.toggle('header__top--active');
-    mainNavMenu.classList.toggle('header__main-nav--active');
+    if (body.style.overflow === 'hidden') {
+      body.style.overflow = 'visible';
+      headerTop.classList.toggle('header__top--active');
+      mainNavMenu.classList.toggle('header__main-nav--active');
+    } else {
+      headerTop.classList.toggle('header__top--active');
+      mainNavMenu.classList.toggle('header__main-nav--active');
+      body.style.overflow = 'hidden';
+    }
+
+
   });
 
   window.addEventListener('resize', () => {
     if (window.innerWidth > 1023.2) {
       headerTop.classList.remove('header__top--active');
       mainNavMenu.classList.remove('header__main-nav--active');
+      body.style.overflow = 'visible';
     }
   });
 
@@ -162,6 +173,13 @@
 
     filtersCloseButton.addEventListener('click', () => {
       filters.classList.toggle('visible');
+    });
+
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1023.2) {
+        filters.classList.remove('visible');
+      }
     });
 
     filterToggles.forEach((item) => {
