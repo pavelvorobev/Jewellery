@@ -474,7 +474,12 @@ img {
     overflow-y: scroll; } }
 
 .header__main-nav--active.header__main-nav--nojs {
+  margin-top: -2px;
   position: static; }
+  @media (max-width: 1023.2px) {
+    .header__main-nav--active.header__main-nav--nojs {
+      overflow-y: visible;
+      height: max-content; } }
 
 .header__main-nav .header__sublist {
   display: none; }

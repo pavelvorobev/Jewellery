@@ -80,7 +80,13 @@
 }
 
 .header__main-nav--active.header__main-nav--nojs {
+  margin-top: -2px;
   position: static;
+
+  @media (max-width: $width-desktop) {
+    overflow-y: visible;
+    height: max-content;
+  }
 }
 
 .header__main-nav .header__sublist {
