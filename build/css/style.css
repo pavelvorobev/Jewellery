@@ -1525,6 +1525,12 @@ img {
     .catalog__main-wrapper {
       padding: 40px 15px 35px 15px; } }
 
+.catalog button:hover {
+  opacity: 0.8; }
+
+.catalog button:active {
+  opacity: 0.9; }
+
 .filters {
   width: 250px;
   background-color: #ffffff;
@@ -1624,7 +1630,8 @@ img {
   display: none; }
 
 .filters__fieldset h3 {
-  padding: 28px 24px 21px 24px; }
+  padding: 28px 24px 21px 24px;
+  cursor: pointer; }
 
 .filters__fieldset button {
   position: absolute;
@@ -1667,6 +1674,12 @@ img {
   height: 15px;
   border: 1px solid #a87b62;
   margin-right: 10px; }
+  .filters__checkbox:hover {
+    opacity: 0.7; }
+  .filters__checkbox:active {
+    opacity: 0.8; }
+  .filters__checkbox:focus {
+    border: 1px solid #1d1613; }
 
 .filters__settings {
   display: flex;
@@ -1676,12 +1689,16 @@ img {
 .filters__settings label {
   display: flex;
   align-items: center;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  cursor: pointer; }
   .filters__settings label:last-child {
     margin-bottom: 0; }
 
 .filters__settings input[type="checkbox"]:checked + .filters__checkbox {
   background-color: #a87b62; }
+
+.filters__settings input[type="checkbox"]:focus + .filters__checkbox {
+  border: 2px solid #1d1613; }
 
 .filters__button {
   box-sizing: border-box;

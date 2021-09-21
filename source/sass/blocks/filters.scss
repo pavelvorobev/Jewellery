@@ -126,6 +126,7 @@
 
 .filters__fieldset h3 {
   padding: 28px 24px 21px 24px;
+  cursor: pointer;
 }
 
 .filters__fieldset button {
@@ -185,6 +186,18 @@
   height: 15px;
   border: 1px solid $color-brown-menu;
   margin-right: 10px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    border: 1px solid $color-black-text;
+  }
 }
 
 .filters__settings {
@@ -197,6 +210,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  cursor: pointer;
 
   &:last-child {
     margin-bottom: 0;
@@ -205,6 +219,10 @@
 
 .filters__settings input[type="checkbox"]:checked + .filters__checkbox {
   background-color: $color-brown-menu;
+}
+
+.filters__settings input[type="checkbox"]:focus + .filters__checkbox {
+  border: 2px solid $color-black-text;
 }
 
 .filters__button {

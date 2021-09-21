@@ -66,3 +66,13 @@
     padding: 40px 15px 35px 15px;
   }
 }
+
+.catalog button {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+}
