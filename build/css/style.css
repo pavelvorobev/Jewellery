@@ -422,6 +422,18 @@ img {
     .header__top--active {
       background-color: #a87b62; } }
 
+.header__top svg:hover {
+  opacity: 0.7; }
+
+.header__top svg:active {
+  opacity: 0.8; }
+
+.header input:hover {
+  opacity: 0.7; }
+
+.header input:active {
+  opacity: 0.8; }
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -626,22 +638,22 @@ img {
   justify-content: center;
   align-items: center;
   min-height: 463px;
-  background: #564034b2 url("../img/header-banner-desktop.jpg") center/cover no-repeat; }
+  background: #564034b2 url("../img/header-banner-desktop.webp") center/cover no-repeat; }
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .header__banner {
-      background: #564034b2 url("../img/header-banner-desktop@2x.jpg") center/cover no-repeat; } }
+      background: #564034b2 url("../img/header-banner-desktop@2x.webp") center/cover no-repeat; } }
   @media (max-width: 1023.2px) {
     .header__banner {
-      background: #564034b2 url("../img/header-banner-tablet.jpg") center/cover no-repeat; } }
+      background: #564034b2 url("../img/header-banner-tablet.webp") center/cover no-repeat; } }
   @media (max-width: 1023.2px) and (min-resolution: 192dpi), (max-width: 1023.2px) and (min-resolution: 2dppx) {
     .header__banner {
-      background: #564034b2 url("../img/header-banner-tablet@2x.jpg") center/cover no-repeat; } }
+      background: #564034b2 url("../img/header-banner-tablet@2x.webp") center/cover no-repeat; } }
   @media (max-width: 767.2px) {
     .header__banner {
-      background: #564034b2 url("../img/header-banner-mobile.jpg") center/cover no-repeat; } }
+      background: #564034b2 url("../img/header-banner-mobile.webp") center/cover no-repeat; } }
   @media (max-width: 767.2px) and (min-resolution: 192dpi), (max-width: 767.2px) and (min-resolution: 2dppx) {
     .header__banner {
-      background: #564034b2 url("../img/header-banner-mobile@2x.jpg") center/cover no-repeat; } }
+      background: #564034b2 url("../img/header-banner-mobile@2x.webp") center/cover no-repeat; } }
 
 .header__banner p {
   text-align: center;
@@ -1129,6 +1141,9 @@ img {
   .questions__item svg:active {
     color: rgba(168, 123, 98, 0.8); }
 
+.questions__item.closed {
+  cursor: pointer; }
+
 .questions__item.closed h3 {
   margin-bottom: 0; }
 
@@ -1342,6 +1357,10 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px; }
+  .footer__form input:hover {
+    opacity: 0.7; }
+  .footer__form input:active {
+    opacity: 0.8; }
   @media (max-width: 1365px) {
     .footer__form input {
       width: 28.184vw; } }

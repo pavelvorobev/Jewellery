@@ -10,6 +10,26 @@
   }
 }
 
+.header__top svg {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.8
+  }
+}
+
+.header input {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -275,25 +295,25 @@
   justify-content: center;
   align-items: center;
   min-height: 463px;
-  background: #564034b2 url("../img/header-banner-desktop.jpg") center / cover no-repeat;
+  background: #564034b2 url("../img/header-banner-desktop.webp") center / cover no-repeat;
 
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background: #564034b2 url("../img/header-banner-desktop@2x.jpg") center / cover no-repeat;
+    background: #564034b2 url("../img/header-banner-desktop@2x.webp") center / cover no-repeat;
   }
 
   @media (max-width: $width-desktop) {
-    background: #564034b2 url("../img/header-banner-tablet.jpg") center / cover no-repeat;
+    background: #564034b2 url("../img/header-banner-tablet.webp") center / cover no-repeat;
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background: #564034b2 url("../img/header-banner-tablet@2x.jpg") center / cover no-repeat;
+      background: #564034b2 url("../img/header-banner-tablet@2x.webp") center / cover no-repeat;
     }
   }
 
   @media (max-width: $width-tablet) {
-    background: #564034b2 url("../img/header-banner-mobile.jpg") center / cover no-repeat;
+    background: #564034b2 url("../img/header-banner-mobile.webp") center / cover no-repeat;
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background: #564034b2 url("../img/header-banner-mobile@2x.jpg") center / cover no-repeat;
+      background: #564034b2 url("../img/header-banner-mobile@2x.webp") center / cover no-repeat;
     }
   }
 }

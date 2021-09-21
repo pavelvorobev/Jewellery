@@ -114,6 +114,10 @@
   }
 }
 
+.questions__item.closed {
+  cursor: pointer;
+}
+
 .questions__item.closed h3 {
   margin-bottom: 0;
 }
