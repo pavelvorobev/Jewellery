@@ -42,7 +42,7 @@
       document.body.style.overflow = 'visible';
       modals.classList.remove('visible');
       modals.classList.add('hidden');
-      document.removeEventListener('keydown', onEscClose);
+      window.removeEventListener('keydown', onEscClose);
     }
   };
 
@@ -60,7 +60,7 @@
 
       modals.addEventListener('transitionend', () => {
         modalEmailInput.focus();
-        document.addEventListener('keydown', onEscClose);
+        window.addEventListener('keydown', onEscClose);
       });
 
       modals.addEventListener('click', (e) => {
@@ -71,7 +71,7 @@
         }
       });
 
-      document.addEventListener('keydown', onEscClose);
+      window.addEventListener('keydown', onEscClose);
     });
   }));
 
