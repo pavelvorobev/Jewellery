@@ -60,6 +60,7 @@
 
       modals.addEventListener('transitionend', () => {
         modalEmailInput.focus();
+        document.addEventListener('keydown', onEscClose);
       });
 
       modals.addEventListener('click', (e) => {
@@ -125,6 +126,7 @@
         1024: {
           slidesPerView: 4,
           slidesPerGroup: 4,
+          spaceBetween: 30,
           pagination: {
             type: 'bullets',
             renderBullet: function (index, className) {
@@ -164,8 +166,10 @@
     const filtersForm = document.querySelector('.filters__form');
     const filtersOpenButton = document.querySelector('.goods__filters-button--open');
     const filtersCloseButton = document.querySelector('.filters__button--close');
+    const catalogMain = document.querySelector('.catalog__main');
 
     filtersForm.classList.remove('filters__form--nojs');
+    catalogMain.classList.remove('catalog__main--nojs');
 
     filtersOpenButton.addEventListener('click', () => {
       filters.classList.toggle('visible');

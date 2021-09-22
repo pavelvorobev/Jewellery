@@ -7,8 +7,8 @@
 }
 
 .modals:not(:focus-within) {
-  background-color: rgba($color-white, 0.99);
-  transition: background-color 0.01s;
+  margin-bottom: 1px;
+  transition: margin-bottom 0.01s;
 }
 
 .modals__login-form {

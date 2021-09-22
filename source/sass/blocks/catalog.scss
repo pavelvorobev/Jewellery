@@ -76,3 +76,17 @@
     opacity: 0.9;
   }
 }
+
+.catalog__main--nojs .goods__filters-button {
+  @media (max-width: $width-desktop) {
+    display: none;
+  }
+}
+
+.catalog__main--nojs .filters {
+  @media (max-width: $width-desktop) {
+    position: static;
+    display: block;
+    margin: 0 auto 50px auto;
+  }
+}
