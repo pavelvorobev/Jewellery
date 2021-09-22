@@ -99,7 +99,7 @@
         clickable: true,
       },
       breakpoints: {
-        320: {
+        0: {
           slidesPerView: 2,
           slidesPerGroup: 2,
           spaceBetween: 30,
