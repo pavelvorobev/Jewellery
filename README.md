@@ -1,5 +1,6 @@
 # Проект в рамках Акселератора HTML Академии
 ## Посмотреть проект на GitHub Pages
+https://pavelvorobev.github.io/Jewellery/build/main.html
 ## Краткая инструкция по работе
 ### Для начала работы у вас должент быть установлен:
 * Node.js v.10.15.3
